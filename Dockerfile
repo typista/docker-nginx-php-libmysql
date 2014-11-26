@@ -10,11 +10,11 @@ RUN yum update -y && \
     wget http://sakuratan.biz/nginx/php-fastcgi && \
     chmod +x php-fastcgi && \
     mkdir -p /var/run/nginx/ && \
-	wget https://raw.githubusercontent.com/typista/docker-base/master/files/etc_init.d_nginx -O /etc/init.d/nginx && \
-	wget https://raw.githubusercontent.com/typista/docker-base/master/files/nginx.conf -O /usr/local/nginx/conf/nginx.conf && \
-	wget https://raw.githubusercontent.com/typista/docker-base/master/files/php_exec -O /usr/local/nginx/conf/php_exec && \
-	wget https://raw.githubusercontent.com/typista/docker-base/master/files/php_ssl_exec -O /usr/local/nginx/conf/php_ssl_exec && \
-	wget https://raw.githubusercontent.com/typista/docker-base/master/files/services.sh -O /etc/services.sh && \
+	wget https://raw.githubusercontent.com/typista/docker-nginx-php-libmysql/master/files/etc_init.d_nginx -O /etc/init.d/nginx && \
+	wget https://raw.githubusercontent.com/typista/docker-nginx-php-libmysql/master/files/nginx.conf -O /usr/local/nginx/conf/nginx.conf && \
+	wget https://raw.githubusercontent.com/typista/docker-nginx-php-libmysql/master/files/php_exec -O /usr/local/nginx/conf/php_exec && \
+	wget https://raw.githubusercontent.com/typista/docker-nginx-php-libmysql/master/files/php_ssl_exec -O /usr/local/nginx/conf/php_ssl_exec && \
+	wget https://raw.githubusercontent.com/typista/docker-nginx-php-libmysql/master/files/services.sh -O /etc/services.sh && \
 	chmod +x /etc/services.sh && \
 	chmod +x /etc/init.d/nginx
 #EXPOSE 80
